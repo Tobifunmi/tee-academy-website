@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses — Tee Academy</title>
+  <meta name="description" content="Full-length video courses from Tee Academy: HTML & CSS, JavaScript, Python, React, and SQL." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <span class="tee">Tee</span> Academy
+        <small>The Excellent Erudite Academy</small>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" onclick="toggleNav(this)">Menu ☰</button>
+      <ul class="nav-links" id="site-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html" aria-current="page">Courses</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="wrap">
+        <span class="stamp">Course catalog</span>
+        <h1>Video courses, <span class="mark accent">start to mastery</span></h1>
+        <p class="lede">Each course pairs a full-length embedded video lesson with a clear syllabus. Press play right here — no sign-up wall between you and learning.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+
+        <!-- Course 1 -->
+        <article class="course">
+          <div class="course-media">
+            <div class="video-frame">
+              <iframe src="https://www.youtube.com/embed/kUMe1FH4CHE" title="HTML full course video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="course-body">
+            <span class="stamp">Course 01 · Web Development</span>
+            <h3>HTML &amp; CSS Foundations</h3>
+            <p>The structure and style of the web, from your very first tag to complete responsive layouts. Ideal if you have never written a line of code.</p>
+            <ul class="course-facts">
+              <li>Beginner</li>
+              <li>Video + practice tasks</li>
+              <li>Self-paced</li>
+            </ul>
+            <a class="btn btn-solid" href="tutorials.html">Practice with tutorials</a>
+          </div>
+        </article>
+
+        <!-- Course 2 -->
+        <article class="course">
+          <div class="course-media">
+            <div class="video-frame">
+              <iframe src="https://www.youtube.com/embed/PkZNo7MFNFg" title="JavaScript for beginners video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="course-body">
+            <span class="stamp">Course 02 · Programming</span>
+            <h3>JavaScript for Beginners</h3>
+            <p>Bring pages to life. Learn variables, functions, the DOM, and events — then build interactive features that respond to real users.</p>
+            <ul class="course-facts">
+              <li>Beginner</li>
+              <li>Project-based</li>
+              <li>Self-paced</li>
+            </ul>
+            <a class="btn btn-solid" href="tutorials.html">Practice with tutorials</a>
+          </div>
+        </article>
+
+        <!-- Course 3 -->
+        <article class="course">
+          <div class="course-media">
+            <div class="video-frame">
+              <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" title="Python essentials video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="course-body">
+            <span class="stamp">Course 03 · Data &amp; Automation</span>
+            <h3>Python Essentials</h3>
+            <p>The most versatile language in tech. Automate boring tasks, work with data, and lay the groundwork for AI and machine learning.</p>
+            <ul class="course-facts">
+              <li>Beginner</li>
+              <li>Hands-on exercises</li>
+              <li>Self-paced</li>
+            </ul>
+            <a class="btn btn-solid" href="tutorials.html">Practice with tutorials</a>
+          </div>
+        </article>
+
+        <!-- Course 4 -->
+        <article class="course">
+          <div class="course-media">
+            <div class="video-frame">
+              <iframe src="https://www.youtube.com/embed/bMknfKXIFA8" title="React course video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="course-body">
+            <span class="stamp">Course 04 · Frontend</span>
+            <h3>React in Practice</h3>
+            <p>Move from static pages to modern applications. Components, state, and hooks — taught by building real interfaces step by step.</p>
+            <ul class="course-facts">
+              <li>Intermediate</li>
+              <li>Requires JavaScript basics</li>
+              <li>Self-paced</li>
+            </ul>
+            <a class="btn btn-solid" href="tutorials.html">Practice with tutorials</a>
+          </div>
+        </article>
+
+        <!-- Course 5 -->
+        <article class="course">
+          <div class="course-media">
+            <div class="video-frame">
+              <iframe src="https://www.youtube.com/embed/HXV3zeQKqGY" title="SQL course video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="course-body">
+            <span class="stamp">Course 05 · Databases</span>
+            <h3>SQL &amp; Databases</h3>
+            <p>Every serious application runs on data. Learn to design tables, write queries, and answer real business questions with SQL.</p>
+            <ul class="course-facts">
+              <li>Beginner friendly</li>
+              <li>Query-along format</li>
+              <li>Self-paced</li>
+            </ul>
+            <a class="btn btn-solid" href="tutorials.html">Practice with tutorials</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="cta-band">
+          <h2>Not sure where to begin?</h2>
+          <p>Start with a short tutorial — each one takes under an hour and gives you a feel for the subject before you commit to a full course.</p>
+          <a class="btn" href="tutorials.html">Try a free tutorial</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <span>© 2026 Tee Academy · The Excellent Erudite Academy</span>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      var nav = document.getElementById('site-nav');
+      var open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    }
+  </script>
+</body>
+</html>

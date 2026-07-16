@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorials — Tee Academy</title>
+  <meta name="description" content="Bite-size tutorials from Tee Academy — practical skill builders in web development, programming, and data." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <span class="tee">Tee</span> Academy
+        <small>The Excellent Erudite Academy</small>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" onclick="toggleNav(this)">Menu ☰</button>
+      <ul class="nav-links" id="site-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="tutorials.html" aria-current="page">Tutorials</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="wrap">
+        <span class="stamp">Skill builders</span>
+        <h1>Tutorials you can finish <span class="mark accent">today</span></h1>
+        <p class="lede">Short, focused lessons designed to be completed in a single sitting. Perfect for sampling a topic, filling a gap, or warming up before a full course.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="stamp">Web development</span>
+          <h2>Build for the browser</h2>
+        </div>
+
+        <article class="tutorial">
+          <div class="tutorial-badge" aria-hidden="true">&lt;/&gt;</div>
+          <div>
+            <h3>Your First Web Page in 30 Minutes</h3>
+            <p>Create and publish a simple personal page using nothing but HTML and a text editor.</p>
+          </div>
+          <span class="level">Beginner</span>
+        </article>
+
+        <article class="tutorial">
+          <div class="tutorial-badge" aria-hidden="true">{}</div>
+          <div>
+            <h3>CSS Flexbox, Explained Visually</h3>
+            <p>Stop guessing at layouts. Learn the handful of flexbox properties that solve 90% of alignment problems.</p>
+          </div>
+          <span class="level">Beginner</span>
+        </article>
+
+        <article class="tutorial">
+          <div class="tutorial-badge" aria-hidden="true">▦</div>
+          <div>
+            <h3>Responsive Design with CSS Grid</h3>
+            <p>Build a page layout that adapts gracefully from phone to widescreen with a single grid definition.</p>
+          </div>
+          <span class="level">Intermediate</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="stamp">Programming</span>
+          <h2>Think in code</h2>
+        </div>
+
+        <article class="tutorial">
+          <div class="tutorial-badge" aria-hidden="true">JS</div>
+          <div>
+            <h3>DOM Manipulation Basics</h3>
+            <p>Select elements, respond to clicks, and update the page — the three moves behind every interactive site.</p>
+          </div>
+          <span class="level">Beginner</span>
+        </article>
+
+        <article class="tutorial">
+          <div class="tutorial-badge" aria-hidden="true">ƒ</div>
+          <div>
+            <h3>JavaScript Functions &amp; Arrow Syntax</h3>
+            <p>Understand how functions really work, then modernize your code with clean arrow-function patterns.</p>
+          </div>
+          <span class="level">Beginner</span>
+        </article>
+
+        <article class="tutorial">
+          <div class="tutorial-badge" aria-hidden="true">Py</div>
+          <div>
+            <h3>Automate a Boring Task with Python</h3>
+            <p>Write a small script that renames a folder full of files — and learn loops, strings, and the file system on the way.</p>
+          </div>
+          <span class="level">Beginner</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="stamp">Data</span>
+          <h2>Ask better questions of your data</h2>
+        </div>
+
+        <article class="tutorial">
+          <div class="tutorial-badge" aria-hidden="true">Σ</div>
+          <div>
+            <h3>SQL SELECT in One Sitting</h3>
+            <p>Filter, sort, and summarize a real dataset with the query patterns you will use every single day.</p>
+          </div>
+          <span class="level">Beginner</span>
+        </article>
+
+        <article class="tutorial">
+          <div class="tutorial-badge" aria-hidden="true">⌁</div>
+          <div>
+            <h3>JOINs Without the Headache</h3>
+            <p>A visual walkthrough of INNER, LEFT, and RIGHT joins — finally make sense of combining tables.</p>
+          </div>
+          <span class="level">Intermediate</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="cta-band">
+          <h2>Finished a tutorial? Go deeper.</h2>
+          <p>Every tutorial maps to a full course with complete video instruction. Turn a one-hour win into a lasting skill.</p>
+          <a class="btn" href="courses.html">See the full courses</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <span>© 2026 Tee Academy · The Excellent Erudite Academy</span>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      var nav = document.getElementById('site-nav');
+      var open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    }
+  </script>
+</body>
+</html>

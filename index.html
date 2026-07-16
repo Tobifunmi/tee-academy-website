@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tee Academy — The Excellent Erudite Academy</title>
+  <meta name="description" content="Tee Academy — The Excellent Erudite Academy. Practical technology courses, tutorials, and a blog for lifelong learners." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <span class="tee">Tee</span> Academy
+        <small>The Excellent Erudite Academy</small>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" onclick="toggleNav(this)">Menu ☰</button>
+      <ul class="nav-links" id="site-nav">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="stamp">Est. for the curious</span>
+          <h1>Learn technology the <span class="mark accent">erudite</span> way.</h1>
+          <p class="lede">Tee Academy turns complex tech skills into clear, structured lessons — so you can build real projects, not just collect certificates. Study at your pace, on any device.</p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="courses.html">Browse courses</a>
+            <a class="btn btn-ghost" href="tutorials.html">Start a free tutorial</a>
+          </div>
+        </div>
+        <aside class="index-card" aria-label="What you will find at Tee Academy">
+          <h3>Catalog Card № 001</h3>
+          <ul>
+            <li><strong>Courses:</strong> full video programs</li>
+            <li><strong>Tutorials:</strong> bite-size skill builders</li>
+            <li><strong>Blog:</strong> weekly tech essays</li>
+            <li><strong>Pace:</strong> yours, always</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Why Tee Academy -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="stamp">Why study here</span>
+          <h2>Built for learners who want depth, not noise</h2>
+          <p>Every course and tutorial follows the same promise: explain it clearly, show it in practice, and leave you with something you built yourself.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <span class="meta">Structured paths</span>
+            <h3>From first line to full project</h3>
+            <p>Courses are sequenced so each lesson builds on the last. No jumping around, no missing prerequisites — just steady, visible progress.</p>
+          </article>
+          <article class="card">
+            <span class="meta">Video-first lessons</span>
+            <h3>Watch, pause, build</h3>
+            <p>Embedded tutorial videos let you follow along in real time. Every course pairs its videos with practice tasks you complete as you watch.</p>
+          </article>
+          <article class="card">
+            <span class="meta">Always current</span>
+            <h3>A blog that keeps you sharp</h3>
+            <p>Our tech blog covers the tools, trends, and ideas shaping the industry — written in plain language for busy learners.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured courses -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="stamp">Featured</span>
+          <h2>Popular courses this term</h2>
+          <p>Three of our most-loved programs. Each includes full-length video instruction you can start today.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <span class="meta">Web Development</span>
+            <h3>HTML &amp; CSS Foundations</h3>
+            <p>Learn the building blocks of every website — structure, styling, and responsive layouts that work on any screen.</p>
+            <a class="card-link" href="courses.html">View course →</a>
+          </article>
+          <article class="card">
+            <span class="meta">Programming</span>
+            <h3>JavaScript for Beginners</h3>
+            <p>Go from zero to writing interactive web features with the world's most widely used programming language.</p>
+            <a class="card-link" href="courses.html">View course →</a>
+          </article>
+          <article class="card">
+            <span class="meta">Data &amp; Automation</span>
+            <h3>Python Essentials</h3>
+            <p>Master the language behind data science, automation, and AI — with projects you can show off from week one.</p>
+            <a class="card-link" href="courses.html">View course →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="wrap">
+        <div class="cta-band">
+          <h2>Ready to become excellently erudite?</h2>
+          <p>Join thousands of learners studying with Tee Academy. Pick a course, press play, and start building today.</p>
+          <a class="btn" href="courses.html">Explore all courses</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <span>© 2026 Tee Academy · The Excellent Erudite Academy</span>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      var nav = document.getElementById('site-nav');
+      var open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    }
+  </script>
+</body>
+</html>

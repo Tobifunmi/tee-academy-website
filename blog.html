@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Tee Academy</title>
+  <meta name="description" content="The Tee Academy blog — plain-language essays on technology, tools, and trends for lifelong learners." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <span class="tee">Tee</span> Academy
+        <small>The Excellent Erudite Academy</small>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" onclick="toggleNav(this)">Menu ☰</button>
+      <ul class="nav-links" id="site-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="blog.html" aria-current="page">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="wrap">
+        <span class="stamp">The journal</span>
+        <h1>Tech, explained <span class="mark accent">properly</span></h1>
+        <p class="lede">Weekly essays on the tools, trends, and ideas shaping technology — written in plain language, so you can stay informed without wading through jargon.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="grid grid-2">
+
+          <article class="post">
+            <span class="date">July 14, 2026</span>
+            <h3><a href="#">AI Assistants in Your Workflow: Where They Help, Where They Don't</a></h3>
+            <p>AI coding and writing assistants are everywhere now — but knowing when to lean on them and when to think for yourself is the real skill. A practical guide to working with AI without letting your fundamentals atrophy.</p>
+            <div class="tags"><span>AI</span><span>Productivity</span><span>Opinion</span></div>
+          </article>
+
+          <article class="post">
+            <span class="date">July 7, 2026</span>
+            <h3><a href="#">Why Learning HTML Still Matters in a No-Code World</a></h3>
+            <p>Drag-and-drop builders can take you far — until they can't. Understanding the markup underneath gives you control no template ever will, and it takes far less time to learn than you think.</p>
+            <div class="tags"><span>Web Dev</span><span>Beginners</span></div>
+          </article>
+
+          <article class="post">
+            <span class="date">June 30, 2026</span>
+            <h3><a href="#">Python vs JavaScript: Which Should You Learn First?</a></h3>
+            <p>The most common question new learners ask, answered honestly. The truth: it depends on what you want to build — and we break down exactly how to decide in five minutes.</p>
+            <div class="tags"><span>Programming</span><span>Career</span></div>
+          </article>
+
+          <article class="post">
+            <span class="date">June 23, 2026</span>
+            <h3><a href="#">The Database Behind Every App You Love</a></h3>
+            <p>From your banking app to your favorite streaming service, structured data makes the modern world run. A gentle introduction to how databases think — no installation required.</p>
+            <div class="tags"><span>Databases</span><span>SQL</span></div>
+          </article>
+
+          <article class="post">
+            <span class="date">June 16, 2026</span>
+            <h3><a href="#">Responsive Design Is a Mindset, Not a Media Query</a></h3>
+            <p>Mobile-first isn't a checkbox — it's a way of thinking about content. How to design pages that feel native on every screen, starting from your very first layout.</p>
+            <div class="tags"><span>CSS</span><span>Design</span></div>
+          </article>
+
+          <article class="post">
+            <span class="date">June 9, 2026</span>
+            <h3><a href="#">How to Actually Finish an Online Course</a></h3>
+            <p>Completion rates for online courses are famously low. Here's the study system our most successful learners use — schedules, projects, and the surprising power of teaching what you just learned.</p>
+            <div class="tags"><span>Learning</span><span>Habits</span></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="cta-band">
+          <h2>Read something useful? Now build something.</h2>
+          <p>Ideas stick when you use them. Pick the course that matches today's article and put the theory to work.</p>
+          <a class="btn" href="courses.html">Go to courses</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <span>© 2026 Tee Academy · The Excellent Erudite Academy</span>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      var nav = document.getElementById('site-nav');
+      var open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    }
+  </script>
+</body>
+</html>
