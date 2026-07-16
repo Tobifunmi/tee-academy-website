@@ -258,6 +258,12 @@ h3 { font-size: 1.25rem; }
 .btn-ghost { background: transparent; color: var(--orange-deep); }
 .btn-ghost:hover { background: rgba(217, 119, 87, 0.1); transform: translateY(-2px); }
 
+/* ---------- Anchor-jump offset ----------
+   Keeps in-page anchor targets clear of the sticky header. */
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
+
 /* ---------- Sections ---------- */
 
 .section { padding: clamp(3rem, 7vw, 5.5rem) 0; }
@@ -419,6 +425,49 @@ h3 { font-size: 1.25rem; }
   border-radius: 999px;
   padding: 0.3em 0.9em;
   white-space: nowrap;
+}
+
+/* ---------- Quick-jump topic blocks ---------- */
+
+.topic-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.topic-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem 1.6rem;
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform 0.15s ease, border-color 0.15s ease, background-color 0.2s ease;
+}
+.topic-block:hover {
+  transform: translateY(-3px);
+  border-color: var(--orange);
+}
+.topic-block:focus-visible {
+  transform: translateY(-3px);
+}
+.topic-block .meta {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--orange-deep);
+}
+.topic-block h3 { font-size: 1.1rem; }
+.topic-block p { color: var(--ink-soft); font-size: 0.92rem; }
+
+@media (max-width: 900px) {
+  .topic-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .topic-grid { grid-template-columns: 1fr; }
 }
 
 /* ---------- Blog ---------- */
