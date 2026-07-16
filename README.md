@@ -115,7 +115,7 @@ No installation, no `npm install`, no build pipeline. This is a static site.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/tee-academy-website.git
+git clone https://github.com/tobifunmi/tee-academy-website.git
 cd tee-academy-website
 
 # 2. Open it
